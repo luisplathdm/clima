@@ -6,65 +6,78 @@
              BackgroundColor="Black">
  <Grid>   
              <Grid.RowDefinitions>
-                  <RowDefinition Height="200"/>
-                  <RowDefinition Height="250"/>
-                  <RowDefinition Height="200"/>
+                    <RowDefinition Height="100"/>
+                   <RowDefinition Height="100"/>
+                    <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
              <Grid.ColumnDefinitions>
-                  <ColumnDefinition Width="200"/>
-                  <ColumnDefinition Width="200"/>
-                  <ColumnDefinition Width="200"/>
+                   <ColumnDefinition Width="120"/>
+                  <ColumnDefinition Width="120"/>
+                 <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions> 
-      <Frame x:Name="ComoEstaClima"
-                 
+
+      <Frame x:Name="ComoEstaClima"                 
                   Grid.Column="0"
                   Grid.RowSpan="2"
-                  HeightRequest="100"
-                  Padding="10"
+                  
+                  Padding="15"
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#20d0d0d0">
+                   <Label x:name="LabelTemp"
+                   Text="" />
       </Frame>
-       <Frame x:Name="ChuvaeHumidade"
-                
+
+       <Frame x:Name="ChuvaeHumidade"               
                   Grid.Column="1"
                   Grid.Row="0"
                   HeightRequest="100"
-                  Padding="10"
+                  Padding="15"
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#99d0d0d0">
       </Frame>
-       <Frame x:Name="ComoEstaSol"
-                  
+
+       <Frame x:Name="ComoEstaSol"                  
                   Grid.Column="1"
                   Grid.Row="1"
-                  HeightRequest="100"
-                  Padding="10"
+                 HeightRequest="100"
+                  Padding="15"
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#99d0d0d0">
       </Frame>
-       <Frame x:Name="ComoEstaVento"
-                  
+
+       <Frame x:Name="ComoEstaVento" 
                   Grid.Column="2"
                   Grid.Row="0"
                   HeightRequest="100"
-                  Padding="10"
+                  Padding="15"
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#99d0d0d0">
       </Frame>
-       <Frame x:Name="FaseDaLua"
-                 
+
+       <Frame x:Name="FaseDaLua"           
                   Grid.Column="2"
+                   HeightRequest="100"
                   Grid.Row="1"
-                  HeightRequest="100"
-                  Padding="10"
+                  Padding="15"
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#99d0d0d0">
       </Frame>
+
+      <Frame x:Name="UltimoFrame"                
+                  Grid.ColumnSpan="3"
+                  Grid.Row="2"
+                  HeightRequest="100"
+                  Padding="15"
+                  CornerRadius="30"
+                  Opacity="1"
+                  BackgroundColor="#99d0d0d0">
+      </Frame>
+
  </Grid>  
 </ContentPage>
