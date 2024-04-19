@@ -17,10 +17,12 @@
                  <ColumnDefinition Width="120"/>
             </Grid.ColumnDefinitions> 
 
+      <Image x:Name="imgBackground"/>
+     
       <Frame x:Name="ComoEstaClima"                 
                   Grid.Column="0"
                   Grid.RowSpan="2"
-                  
+                  Grid.Row="0"
                   Padding="15"
                   CornerRadius="30"
                   Opacity="1"
