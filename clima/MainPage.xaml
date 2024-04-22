@@ -4,7 +4,10 @@
              x:Class="clima.MainPage"
              Shell.NavBarIsVisible="false"
              BackgroundColor="Black">
- <Grid>   
+ <Grid    ColumnSpacing="10"
+          RowSpacing="10">
+ 
+ 
              <Grid.RowDefinitions>
                     <RowDefinition Height="100"/>
                    <RowDefinition Height="100"/>
@@ -12,9 +15,9 @@
             </Grid.RowDefinitions>
 
              <Grid.ColumnDefinitions>
-                   <ColumnDefinition Width="120"/>
-                  <ColumnDefinition Width="120"/>
-                 <ColumnDefinition Width="120"/>
+                   <ColumnDefinition Width="*"/>
+                  <ColumnDefinition Width="*"/>
+                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions> 
 
       <Image x:Name="imgBackground"/>
@@ -27,8 +30,10 @@
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#20d0d0d0">
-                   <Label x:name="LabelTemp"
-                   Text="" />
+
+                   <Label x:Name="LabelTemp"
+                   Text="23°C" 
+                   TextColor="white"/>
       </Frame>
 
        <Frame x:Name="ChuvaeHumidade"               
