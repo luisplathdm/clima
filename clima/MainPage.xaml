@@ -30,10 +30,32 @@
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#20d0d0d0">
+         <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>       
+        
+            <Label  x:Name="labeltemp"
+                    HorizontalTextAlignment="Center"
+                    FontSize="29"
+                    TextColor="Black"
+                    Grid.Row="0"/>
 
-                   <Label x:Name="LabelTemp"
-                   Text="23°C" 
-                   TextColor="white"/>
+            <Label  x:Name="labelclima"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15"
+                    TextColor="black"
+                    Grid.Row="1"/>
+
+            <Label  x:Name="labelcidade"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15"
+                    TextColor="Black"
+                    Grid.Row="2"/>
+        </Grid>  
+                  
       </Frame>
 
        <Frame x:Name="ChuvaeHumidade"               
