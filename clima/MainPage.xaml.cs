@@ -5,7 +5,7 @@ namespace clima;
 
 public partial class MainPage : ContentPage
 {
-     
+    Resposta resposta;
 	const string Url="https://api.hgbrasil.com/weather42bd1065";
 	public MainPage()
 
@@ -33,29 +33,28 @@ public partial class MainPage : ContentPage
 		}
 	}
 
-Results results = new Results();
+   
 
 	
     void PreencherTela()
 		{
-			LabelTemp.Text= results.temp.ToString();
-			LabelCity.Text= results.city;
-			labelcidade.Text = results.city;
-			labeldachuva.Text = results.rain.ToString();
-			labeldaumidade.Text = results.humidity.ToString();
-			labeldaforcadovento.Text = results.wind_speedy;
-			labeldadirecaodovento.Text = results.wind_direction.ToString();
-			labeldonascerdosol.Text = results.sunrise;
-			labeldopordosol.Text = results.sunset;
-			if ( results.currently=="chuva")
-			{
-			if (results.rain >= 10 )
-				ImgBackground.Source = "chuva.png";
-			else if (results.cloudiness >= 10)
-			imgBackground.Source ="chuva.png";
-			else 
-				imgBackground.Source ="chuva.png";
-			}
+				
+			labeltemp.Text= resposta.results.temp.ToString();
+
+			labelcity.Text= resposta.results.city;
+
+			labeldachuva.Text = resposta.results.rain.ToString();
+
+			labeldaumidade.Text = resposta.results.humidity.ToString();
+
+			labeldaforcadovento.Text = resposta.results.wind_speedy;
+
+			labeldadirecaodovento.Text = resposta.results.wind_direction.ToString();
+
+			labeldonascerdosol.Text = resposta.results.sunrise;
+
+			labeldopordosol.Text = resposta.results.sunset;
+			
 		}
 
 }
