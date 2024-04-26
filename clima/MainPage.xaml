@@ -89,21 +89,23 @@
                 <Label  x:Name="labeldachuva"
                      HorizontalTextAlignment="Center"
                      FontSize="15"
-                     TextColor="Black"
+                     TextColor="white"
                      Grid.Row="2"/>
+
                 <Label  Text="Umidade :"
                      FontSize="13"
                      HorizontalTextAlignment="Start"
                      VerticalTextAlignment="Center"
                      Grid.Row="1"
                      Grid.Column="0"
-                     TextColor="Black"/>
+                     TextColor="white"/>
 
                 <Label  x:Name="labeldaumidade"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="Black"
-                    Grid.Row="2"/>
+                    TextColor="white"
+                    Grid.Row="2"
+                    Grid.Column="1"/>
                         
      </Grid> 
   </Frame>

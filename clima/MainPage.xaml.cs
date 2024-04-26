@@ -26,6 +26,7 @@ public partial class MainPage : ContentPage
 				resposta = JsonSerializer.Deserialize<Resposta>(content);
 			}
 			PreencherTela();
+			
 		}
 		catch (Exception e)	
 		{
@@ -55,6 +56,8 @@ public partial class MainPage : ContentPage
 
 			labeldopordosol.Text = resposta.results.sunset;
 			
+			if (resposta.results.rain >=10 )
+			{}imgBackground.Source
 		}
 
 }
