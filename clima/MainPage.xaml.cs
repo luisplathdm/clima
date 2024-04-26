@@ -56,9 +56,24 @@ public partial class MainPage : ContentPage
 
 			labeldopordosol.Text = resposta.results.sunset;
 			
-			if (resposta.results.rain >=10 )
-			{}imgBackground.Source
-		}
-
+		//if(resposta.results.currently=="dia")
+		//{
+		//	if(resposta.results.rain>=10)
+		//	imgBackground.Source="diachuvoso.png";
+		//	else if(resposta.results.cloudiness>=10)
+		//	imgBackground.Source="dianublado.png";
+		//	else
+		//	imgBackground.Source="diaensolarado";
+	//	}
+	//	else
+	//	{
+	//		if(resposta.results.rain>=10)
+	//		 imgBackground.Source="diachuvoso.png";
+	//		 else if (resposta.results.cloudiness>=10)
+	//		 imgBackground.Source="noitenublada.png";
+	//		 else
+	//		 imgBackground.Source="noite.png";
+	//	}
+	  }
 }
 

@@ -22,7 +22,6 @@
             </Grid.ColumnDefinitions> 
 
       <Image x:Name="imgBackground"
-       Source="chuva.png"
         Aspect="AspectFill"
         Grid.ColumnSpan="3"
         Grid.RowSpan="4"/>
@@ -35,7 +34,7 @@
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#20d0d0d0">
-         <Grid>
+        <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -45,70 +44,74 @@
             <Label  x:Name="labeltemp"
                     HorizontalTextAlignment="Center"
                     FontSize="29"
-                    TextColor="Black"
+                    TextColor="white"
                     Grid.Row="0"/>
 
             <Label  x:Name="labelclima"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="black"
+                    TextColor="white"
                     Grid.Row="1"/>
 
             <Label  x:Name="labelcity"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="Black"
+                    TextColor="white"
                     Grid.Row="2"/>
-        </Grid>             
-      </Frame>
-   
-       <Frame x:Name="ChuvaeHumidade"               
-                  Grid.Column="1"
-                  Grid.Row="1"
-                  HeightRequest="100"
-                  Padding="15"
-                  CornerRadius="30"
-                  Opacity="1"
-                  BackgroundColor="#20d0d0d0">
+         </Grid> 
+         </Frame>
+                    
+      <Frame   Grid.Row="1"
+               Grid.RowSpan="2"
+                Grid.Column="1"
+                Opacity="1"
+                BackgroundColor="#20d0d0d0"
+                Padding="15"
+                CornerRadius="30">
         <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>      
-                 <Label  Text="Chuva:"
-                     FontSize="13"
-                     HorizontalTextAlignment="Start"
-                     VerticalTextAlignment="Center"
-                     Grid.Row="0"
-                     Grid.Column="0"
-                     TextColor="Black"/>
-                    
-                        
-                    
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>       
+        
+
+                <Label  Text="Chuva:"
+                        FontSize="13"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        TextColor="white"/>
+
                 <Label  x:Name="labeldachuva"
-                     HorizontalTextAlignment="Center"
-                     FontSize="15"
-                     TextColor="white"
-                     Grid.Row="2"/>
+                        FontSize="13"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        TextColor="white"/>               
 
                 <Label  Text="Umidade :"
-                     FontSize="13"
-                     HorizontalTextAlignment="Start"
-                     VerticalTextAlignment="Center"
-                     Grid.Row="1"
-                     Grid.Column="0"
-                     TextColor="white"/>
+                        FontSize="13"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="Center"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        TextColor="white"/>
 
                 <Label  x:Name="labeldaumidade"
-                    HorizontalTextAlignment="Center"
-                    FontSize="15"
-                    TextColor="white"
-                    Grid.Row="2"
-                    Grid.Column="1"/>
-                        
-     </Grid> 
-  </Frame>
+                        FontSize="13"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Center"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        TextColor="white"/> 
+        </Grid>  
+        </Frame> 
 
        <Frame x:Name="ComoEstaSol"                  
                   Grid.Column="1"
@@ -128,13 +131,13 @@
                 <Label  x:Name="labeldopordosol"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="Black"
+                    TextColor="white"
                     Grid.Row="2"/>
 
                <Label  x:Name="labeldonascerdosol"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="Black"
+                    TextColor="white"
                     Grid.Row="2"/>
         </Grid> 
       </Frame>
@@ -151,13 +154,13 @@
                 <Label  x:Name="labeldaforcadovento"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="Black"
+                    TextColor="white"
                     Grid.Row="2"/>
 
                 <Label  x:Name="labeldadirecaodovento"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
-                    TextColor="Black"
+                    TextColor="white"
                     Grid.Row="2"/>
                     
       </Frame>
