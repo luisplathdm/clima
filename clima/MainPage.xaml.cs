@@ -6,7 +6,7 @@ namespace clima;
 public partial class MainPage : ContentPage
 {
     Resposta resposta;
-	const string Url="https://api.hgbrasil.com/weather42bd1065";
+	const string Url="https://api.hgbrasil.com/weather?woeid=455927&key=42bd1065";
 	public MainPage()
 
 	{

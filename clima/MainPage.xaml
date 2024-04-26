@@ -76,32 +76,42 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>      
+                 <Label  Text="Chuva:"
+                     FontSize="13"
+                     HorizontalTextAlignment="Start"
+                     VerticalTextAlignment="Center"
+                     Grid.Row="0"
+                     Grid.Column="0"
+                     TextColor="Black"/>
+                    
+                        
+                    
+                <Label  x:Name="labeldachuva"
+                     HorizontalTextAlignment="Center"
+                     FontSize="15"
+                     TextColor="Black"
+                     Grid.Row="2"/>
+                <Label  Text="Umidade :"
+                     FontSize="13"
+                     HorizontalTextAlignment="Start"
+                     VerticalTextAlignment="Center"
+                     Grid.Row="1"
+                     Grid.Column="0"
+                     TextColor="Black"/>
 
-                   
-                <Label  x:Name="labeldonascerdosol"
+                <Label  x:Name="labeldaumidade"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
                     TextColor="Black"
                     Grid.Row="2"/>
-                    
-                 <Label  x:Name="labeldaforcadovento"
-                    HorizontalTextAlignment="Center"
-                    FontSize="15"
-                    TextColor="Black"
-                    Grid.Row="2"/>
-                    
-                 <Label  x:Name="labeldachuva"
-                    HorizontalTextAlignment="Center"
-                    FontSize="15"
-                    TextColor="Black"
-                    Grid.Row="2"/>
-        </Grid> 
-      </Frame>
+                        
+     </Grid> 
+  </Frame>
 
        <Frame x:Name="ComoEstaSol"                  
                   Grid.Column="1"
                   Grid.Row="2"
-                 HeightRequest="100"
+                  HeightRequest="100"
                   Padding="15"
                   CornerRadius="30"
                   Opacity="1"
@@ -113,20 +123,13 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>      
 
-                   
-                <Label  x:Name="labeldadirecaodovento"
+                <Label  x:Name="labeldopordosol"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
                     TextColor="Black"
                     Grid.Row="2"/>
-                    
-                 <Label  x:Name="labeldaumidade"
-                    HorizontalTextAlignment="Center"
-                    FontSize="15"
-                    TextColor="Black"
-                    Grid.Row="2"/>
-                    
-                 <Label  x:Name="labeldopordosol"
+
+               <Label  x:Name="labeldonascerdosol"
                     HorizontalTextAlignment="Center"
                     FontSize="15"
                     TextColor="Black"
@@ -142,6 +145,19 @@
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#20d0d0d0">
+
+                <Label  x:Name="labeldaforcadovento"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15"
+                    TextColor="Black"
+                    Grid.Row="2"/>
+
+                <Label  x:Name="labeldadirecaodovento"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15"
+                    TextColor="Black"
+                    Grid.Row="2"/>
+                    
       </Frame>
 
        <Frame x:Name="FaseDaLua"           
