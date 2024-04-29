@@ -43,7 +43,7 @@
         
             <Label  x:Name="labeltemp"
                     HorizontalTextAlignment="Center"
-                    FontSize="29"
+                    FontSize="20"
                     TextColor="white"
                     Grid.Row="0"/>
 
@@ -61,13 +61,14 @@
          </Grid> 
          </Frame>
                     
-      <Frame   Grid.Row="1"
-               Grid.RowSpan="2"
-                Grid.Column="1"
-                Opacity="1"
-                BackgroundColor="#20d0d0d0"
-                Padding="15"
-                CornerRadius="30">
+      <Frame   
+      Grid.Row="1"
+      Grid.Column="1"
+      Opacity="1"
+      BackgroundColor="#20d0d0d0"
+      Padding="15"
+      CornerRadius="30">
+
         <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
@@ -78,6 +79,7 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>       
         
+               <Label  x:Name="labeldescricao"/>
 
                 <Label  Text="Chuva:"
                         FontSize="13"
@@ -149,20 +151,60 @@
                   Padding="15"
                   CornerRadius="30"
                   Opacity="1"
-                  BackgroundColor="#20d0d0d0">
+                  BackgroundColor="#80d0d0d0">
+
+                    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="70"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>         
+        
+
+                <Label  Text="Vento"
+                        FontSize="20"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Start"
+                        Grid.Row="0"
+                        Grid.ColumnSpan="2"
+                        TextColor="white"/>
+            
+                <Label  Text="Força :"
+                        FontSize="13"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="Start"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        TextColor="white"/>
 
                 <Label  x:Name="labeldaforcadovento"
-                    HorizontalTextAlignment="Center"
-                    FontSize="15"
-                    TextColor="white"
-                    Grid.Row="2"/>
+                        FontSize="15"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Start"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        TextColor="white"/>     
+
+                <Label  Text="Direção:"
+                        FontSize="13"
+                        HorizontalTextAlignment="Start"
+                        VerticalTextAlignment="Start"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        TextColor="white"/>
 
                 <Label  x:Name="labeldadirecaodovento"
-                    HorizontalTextAlignment="Center"
-                    FontSize="15"
-                    TextColor="white"
-                    Grid.Row="2"/>
-                    
+                        FontSize="13"
+                        HorizontalTextAlignment="Center"
+                        VerticalOptions="Start"
+                         Grid.Row="2"
+                        Grid.Column="1"
+                        TextColor="white"/>         
+        </Grid>     
       </Frame>
 
        <Frame x:Name="FaseDaLua"           
@@ -173,7 +215,15 @@
                   CornerRadius="30"
                   Opacity="1"
                   BackgroundColor="#20d0d0d0">
+                              
+      
+                                  
+        <Label  x:Name="labeldafasedalua"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15"
+                    TextColor="white"/>
       </Frame>
+
 
       <Frame x:Name="UltimoFrame"                
                   Grid.ColumnSpan="3"
