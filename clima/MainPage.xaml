@@ -140,7 +140,7 @@
                     HorizontalTextAlignment="Center"
                     FontSize="15"
                     TextColor="white"
-                    Grid.Row="2"/>
+                    Grid.Row="1"/>
         </Grid> 
       </Frame>
 
@@ -151,7 +151,7 @@
                   Padding="15"
                   CornerRadius="30"
                   Opacity="1"
-                  BackgroundColor="#80d0d0d0">
+                  BackgroundColor="#20d0d0d0">
 
                     <Grid>
         <Grid.RowDefinitions>

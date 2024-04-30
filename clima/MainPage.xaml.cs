@@ -66,6 +66,11 @@ public partial class MainPage : ContentPage
 			labeldafasedalua.Text = "Crescente";
 		else if(resposta.results.moon_phase=="waning")
 			labeldafasedalua.Text = "minguante";
+		else if(resposta.results.moon_phase=="waning_gibbous")
+			labeldafasedalua.Text = "Gibosa minguante";
+        else if(resposta.results.moon_phase=="waning_waning")
+			labeldafasedalua.Text = "Lua minguante";
+
 
 
 		if(resposta.results.currently=="dia")
