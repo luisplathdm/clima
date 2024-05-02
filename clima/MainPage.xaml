@@ -135,6 +135,12 @@
                     FontSize="15"
                     TextColor="white"
                     Grid.Row="2"/>
+                
+                 <Label ="amanhecer"
+                    Text="amanhecer"
+                    HorizontalTextAlignment="Center"
+                    FontSize="15"
+                    TextColor="white"/>
 
                <Label  x:Name="labeldonascerdosol"
                     HorizontalTextAlignment="Center"

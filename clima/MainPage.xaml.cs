@@ -7,6 +7,7 @@ public partial class MainPage : ContentPage
 {
     Resposta resposta;
 	const string Url="https://api.hgbrasil.com/weather?woeid=455927&key=42bd1065";
+
 	public MainPage()
 
 	{
@@ -62,22 +63,27 @@ public partial class MainPage : ContentPage
 			labeldafasedalua.Text = "Cheia";
 		else if(resposta.results.moon_phase=="new")
 			labeldafasedalua.Text = "Nova";
-		else if(resposta.results.moon_phase=="growing")
-			labeldafasedalua.Text = "Crescente";
-		else if(resposta.results.moon_phase=="waning")
+		else if(resposta.results.moon_phase=="waxing_crescent")
+			labeldafasedalua.Text = "lua Crescente";
+		else if(resposta.results.moon_phase=="waxing_gibbous")
 			labeldafasedalua.Text = "minguante";
+		else if(resposta.results.moon_phase=="waning_crescent")
+			labeldafasedalua.Text = "lua minguante";
+        else if(resposta.results.moon_phase=="last_quarter")
+			labeldafasedalua.Text = "quarto minguante";
+	    else if(resposta.results.moon_phase=="last_quarter")
+			labeldafasedalua.Text = "quarta minguante";
 		else if(resposta.results.moon_phase=="waning_gibbous")
-			labeldafasedalua.Text = "Gibosa minguante";
-        else if(resposta.results.moon_phase=="waning_waning")
-			labeldafasedalua.Text = "Lua minguante";
+			labeldafasedalua.Text = "gibosa minguante";
+
 
 
 
 		if(resposta.results.currently=="dia")
 		{
 			if(resposta.results.rain<=10)
-			imgBackground.Source="diachuvoso.png";
-			else if(resposta.results.cloudiness>=10)
+			imgBackground.Source="diaensolarado.png";
+			else if(resposta.results.claudiness>=10)
 			imgBackground.Source="dianublado.png";
 			else
 			imgBackground.Source="diaensolarado";
@@ -86,7 +92,7 @@ public partial class MainPage : ContentPage
 		{
 			if(resposta.results.rain<=10)
 			 imgBackground.Source="diachuvoso.png";
-	 else if (resposta.results.cloudiness>=10)
+	 else if (resposta.results.claudiness>=10)
 			 imgBackground.Source="noitenublada.png";
 			 else
 		 imgBackground.Source="noite.png";
